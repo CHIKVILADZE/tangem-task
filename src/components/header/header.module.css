@@ -1,0 +1,76 @@
+.header {
+  width: 100vw;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 54px;
+  background: linear-gradient(180deg, #101010 0%, #0f0f0f 100%);
+}
+
+.headerBG {
+  width: 110px;
+  height: 54px;
+  background-image: url('/public/assets/headerbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerTextBox {
+  border: 2px solid red;
+  padding-left: 31px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+/* .headerText {
+  margin-left: 30px;
+} */
+
+.sliderBox {
+  display: flex;
+  gap: 4px;
+  border: 1px solid white;
+}
+
+.goldenText {
+  color: #d7a830;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* .arrow {
+  margin-left: 10px;
+} */
+
+/* .swiper {
+  width: 100%;
+  height: 50%;
+  border: 5px solid yellow;
+}
+
+.swiperButtonPrev,
+.swiperButtonPrev {
+  color: red;
+}
+
+.swiperButtonNext:after,
+.swiperButtonPrev:after {
+  font-size: 30px;
+}
+
+.swiperButtonNext.swiper-button-disabled,
+.swiperButtonPrev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 0, 0, 0.5);
+} */
