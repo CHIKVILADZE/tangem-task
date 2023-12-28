@@ -3,6 +3,8 @@
   height: 54px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 54px;
   background: linear-gradient(180deg, #101010 0%, #0f0f0f 100%);
 }
@@ -17,22 +19,27 @@
 }
 
 .headerTextBox {
-  border: 2px solid red;
-  padding-left: 31px;
   display: flex;
+  flex-direction: row;
+  gap: 12px;
   align-items: center;
   color: white;
   justify-content: center;
   text-align: center;
 }
-/* .headerText {
-  margin-left: 30px;
-} */
 
-.sliderBox {
+.headerContent {
   display: flex;
-  gap: 4px;
-  border: 1px solid white;
+}
+
+.hiddenSpan {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hiddenSpan {
+    display: inline;
+  }
 }
 
 .goldenText {
@@ -42,35 +49,79 @@
   font-weight: 600;
 }
 
-/* .arrow {
-  margin-left: 10px;
-} */
-
-/* .swiper {
-  width: 100%;
-  height: 50%;
-  border: 5px solid yellow;
+.buttonBox {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-right: 22px;
 }
 
-.swiperButtonPrev,
-.swiperButtonPrev {
-  color: red;
+.headerButton {
+  display: none;
 }
 
-.swiperButtonNext:after,
-.swiperButtonPrev:after {
-  font-size: 30px;
+@media (min-width: 768px) {
+  .headerButton {
+    display: inline;
+    padding: 10px 14px;
+    background-color: white;
+    border-radius: 14px;
+  }
 }
 
-.swiperButtonNext.swiper-button-disabled,
-.swiperButtonPrev.swiper-button-disabled {
-  opacity: 0;
+.dotImg {
+  display: none;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: red !important;
+@media (min-width: 768px) {
+  .dotImg {
+    display: block;
+  }
 }
 
-.swiper-pagination-bullet {
-  background-color: rgba(255, 0, 0, 0.5);
-} */
+.closeButton {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .closeButton {
+    display: inline;
+  }
+}
+
+.headerContenthidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .headerContenthidden {
+    display: inline-block;
+    display: flex;
+  }
+}
+
+.hiddenSpanSemicolon {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .hiddenSpanSemicolon {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hiddenSpanSemicolon {
+    display: inline;
+  }
+}
+
+.arrow {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .arrow {
+    display: none;
+  }
+}
